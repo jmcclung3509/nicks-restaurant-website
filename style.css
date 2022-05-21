@@ -1,0 +1,584 @@
+* {
+    font-size: 16px;
+    font-family: 'Playfair Display', serif;
+    color: rgb(39, 38, 38);
+}
+body {
+    background-color: #E5E5E5;
+}
+h2 {
+    font-family: "Oswald", sans-serif;
+    
+}
+/*--------------NAVBAR-------------------*/
+
+.no-show {
+    display: none;
+}
+.navbar-nav {
+    font-family: 'Patua One', cursive;
+   
+}
+.navbar{
+    padding: 0;
+    height: 70px;
+}
+.nav-container {
+    padding: 10px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+    padding-left: 20px;
+}
+.me-auto {
+    margin-right: 0 !important;
+    padding-right: 20px;
+    gap: 20px; 
+
+}
+.navbar-brand {
+    padding-left: 20px;
+}
+.navbar-brand img {
+    height: 50%;
+    width: 50%;
+}
+.nav-link:hover{
+    background-color: #E5E5E5;
+}
+.dropdown-item:hover{
+    background-color:#E5E5E5;
+}
+
+/*-------------HERO---------------*/
+.main {
+    margin: 0;
+}
+.hero {
+    background-image: 
+     /* linear-gradient(to bottom, rgba(0,0,0,0.2) 0%,rgba(0,0,0,0.2) 20%), */
+    url("images/sunset.png");
+    background-size: cover;
+    color: white; 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+    height: 50vh;
+    flex-flow: row wrap;
+   
+    
+   
+}
+.hero-container {
+    padding: 0;
+}
+.hero h1 {
+    font-family: 'Oranienbaum', serif;
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 0;
+    width: 60%;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -50px;
+    font-weight: bold;
+}
+/*-------------MAIN---------------------*/
+.section-1 .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+}
+.section-1 p {
+    font-size: 1rem;
+}
+.welcome-content {
+    text-align: center;
+    font-size: 3vw;
+    margin-bottom: 20px;
+}
+.our-story {
+    color: white;
+    background-color: #493838;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+.our-story a{
+    font-family: "Oswald", sans-serif;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.our-story:hover{
+    background-color:   #855959;
+}
+.section-2 {
+    margin-top: 40px;
+}
+.section-2 .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.food-div img{
+    width: -webkit-fill-available;
+    height: 100%;
+    margin-bottom: 20px;
+}
+.section-3 {
+    margin-bottom: 50px; 
+}
+
+.section-3 .hours {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.bottom-img img {
+    width: -webkit-fill-available;
+
+}
+.bottom-img{
+    padding: 0;
+}
+
+
+
+.section-3 {
+    /* background-color: white; */
+    width: 80%; 
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    margin-left:auto;
+    margin-right: auto;
+    gap: 20px;
+}
+.section-3 h2{
+    width: 80%;
+    margin: 50px 0;
+    font-family: "Oswald", sans-serif;
+    font-size: 5vh;
+}
+.hours-container {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: row wrap;
+    background: white;
+    gap: 20px;
+    height: 400px;
+    border-radius: 5px;
+}
+.hours-container h3 {
+    width: 70%;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color:#493838;
+    color: white;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px auto;
+    padding: 10px;
+    vertical-align: center;
+    max-height: 50px;
+
+}
+
+.hours {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    margin: 0 15px;
+}
+.hours p {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+
+}
+.hours span {
+    font-size: 1rem;
+}
+
+.closed {
+    color: #c80d0dee;
+}
+/* .title {
+    width: 60%;
+    text-align: center; 
+    font-size: 1.8rem;
+    border-bottom: 1px solid black;
+    max-height: 50px
+  
+} */
+.restaurant-h3{
+    padding-top: 0;
+  }
+
+.hours a {
+
+    border-radius: 5px;
+    margin: 10px 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+    text-align:center;
+    width: 80%;
+
+}
+
+.hours a:hover{
+    background-color:   #e5e5e5;
+    transform:scale(1.2);
+    transition: all ease-in-out 0.5s;
+}
+.music-schedule {
+    padding: 15px;
+}
+.left {
+    padding-top:10px;
+}
+/*------------CAROUSEL--------------*/
+.section-4 {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    margin-bottom: 50px;
+}
+.carousel-item img {
+    max-height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+/*--------------FOOTER-------------*/
+footer {
+    background-color: white;
+    padding: 20px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    
+
+}
+footer * {
+   font-family: "Oswald", sans-serif;
+   color: rgb(48, 46, 46);
+}
+footer .col  h4 {
+    margin-bottom: 10px;
+    font-size: 2vh;
+}
+
+.footer-content {
+    padding-left: 0;
+}
+footer  .col  {
+   text-align: center;
+}
+footer .footer-content p {
+    font-size: .68rem;
+    margin-bottom: 0;
+    width: 100%;
+  
+}
+.footer-content:first-child{
+    padding-left:12px;
+    padding-right: 0;
+}
+.footer-content i {
+    font-size: 1.5rem;
+    margin-top:5px;
+}
+
+.footer-content label{
+    font-size: 0.7rem;
+    width: 100%;
+}
+.footer-content a {
+    font-size: 0.7rem;
+    width: 100%;
+}
+.footer-directions {
+    padding-left: 0;
+}
+/*-------------MENU PAGE-------------------*/
+
+.buffer {
+    height: 100px;
+}
+.menu-cont h3 {
+    font-size: rem;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+}
+#happy-hour P{
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/*-------------MUSIC PAGE-------------*/
+.music-title {
+    margin: 20px 0 50px 0;
+    font-family: "Oswald", sans-serif;
+}
+
+/*------------HISTORY PAGE----------------*/
+#history p {
+    text-indent: 30px;
+}
+.names {
+    margin-left: 30px;
+    width: 80%;
+    text-align: center;
+}
+#history figure {
+    margin: 40px 0;
+}
+/*---------------SeaBreeze Motel-----------------*/
+.section-sb-3 {
+    margin-bottom: 50px;
+}
+.section-sb-3 img {
+    padding: 20px 0;
+}
+
+
+/*-------------MEDIA QUERIES--------------*/
+
+
+@media screen and (min-width: 768px) {
+    p {
+        font-size: 1.2rem;
+    }
+    h2 {
+        font-size: 2.5rem;
+    }
+    .no-show {
+        display: block;
+    }
+    .navbar {
+        height: 100px;
+    }
+    .navbar-brand img {
+        width: 100%;
+        height: 100%;
+    }
+    .hero h1{
+        font-size: 6.5rem;
+        width: 90%;
+        margin-top: -150px;
+    }
+    .no-show {
+        display: block;
+    }
+    .section-3 {
+        width: 94%;
+    }
+    .hours-container {
+        width: 48%;
+        height: 525px;
+        margin-bottom: 100px;
+    }
+
+    .hours-container p  {
+        font-size: 1.5rem;
+      
+    }
+
+     .hours-container span {
+        font-size: 1.5rem;
+    }
+    .hours-container h3 {
+        font-size: 1.8rem;
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    .hours a {
+        font-size: 1.5rem;
+    }
+    .closed {
+        font-size: 1.5rem;
+    }
+
+    .section-4 {
+        width: 60%;
+
+    }
+    .carousel-item img{
+        width: 100%;
+        max-height: 450px;
+    }
+    .carousel-item .car-img {
+        width:150%;
+    }
+    /*----------FOOTER---------------*/
+    footer  .footer-content p{
+        font-size: 1rem;
+    }
+    .footer-content a {
+        font-size: 1rem;
+    }
+    .footer-content label{
+        font-size: 1rem;
+    }
+    .footer-content i{
+        font-size: 2rem;
+    }
+    .footer-row {
+        justify-content: space-around;
+    }
+    /*---------SEABREEZE-------------*/
+    .sb-content {
+        justify-content: center;
+    }
+  
+}
+
+@media screen and (min-width: 1200px) {
+    /*------------NAV-------------------*/
+    nav .nav-link  {
+        font-size: 1.2rem;
+
+    }
+    nav .dropdown-item {
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 1.5rem;
+    }
+    h2 {
+        font-size: 5rem;;
+        margin-top: 100px;
+  
+    
+    }
+    nav a {
+        font-size: 1rem;
+    }
+    
+    .hero {
+        height: 80vh;
+         flex-flow: row nowrap;
+       
+    }
+
+    .hero h1 {
+        font-size: 8rem;
+        margin-bottom: 0;
+       
+
+    }
+    .hours-container {
+        height: 550px;
+    }
+   
+    /*-------------MAIN---------------------*/
+ 
+  
+    .section-1 p {
+        font-size: 1.5rem;;
+    }
+    .welcome-content {
+        font-size: 1.5rem;   
+    }
+  
+  
+    .title {
+        width: 60%;
+        text-align: center; 
+    }
+    .section-3 {
+        width: 60%; 
+        margin-bottom: 100px;
+    
+    }
+    .section-3 h2{
+        width: 60%;
+       
+    }
+
+
+    .closed {
+        font-size: 1.8rem;
+    }
+    .section-4 {
+        width: 40%;
+        margin-bottom: 100px;
+    }
+    .carousel-item img{
+        width: 100%;
+        max-height: 450px;
+    }
+    .carousel-item .car-img {
+        width:150%;
+    }
+    .music-schedule {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1.7rem;
+    }
+    /*--------- FOOTER------------*/
+    .footer-content p {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .footer-content a {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .footer-content label {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    /*------------ABOUT-------------*/
+
+    #history .content-wrapper {
+        padding: 0 50px;
+    }
+
+    /*------------MENU -------------*/
+    #menu h2 {
+        margin-bottom: 50px;
+    }
+    #menu img {
+        padding: 0 20px;
+    }
+
+}
+
+@media screen and (min-width: 1600px) {
+ .hero h1{
+     font-size: 8rem;
+    
+ }
+ .hours-container h3{
+     font-size: 2rem;
+ }
+ }
