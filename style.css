@@ -27,6 +27,7 @@ h2 {
 .navbar {
     padding: 0;
     height: 70px;
+    background-color: #e5e5e5 !important;
 }
 
 .nav-container {
@@ -36,6 +37,7 @@ h2 {
 .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
     padding-left: 20px;
+    background-color: #E5E5E5;
 }
 
 .me-auto {
@@ -256,14 +258,7 @@ h2 {
     color: #c80d0dee;
 }
 
-/* .title {
-    width: 60%;
-    text-align: center; 
-    font-size: 1.8rem;
-    border-bottom: 1px solid black;
-    max-height: 50px
-  
-} */
+
 .restaurant-h3 {
     padding-top: 0;
 }
@@ -317,7 +312,8 @@ footer {
     padding: 20px 10px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 50px;
+    margin-top: 200px;
+
 
 
 }
@@ -384,9 +380,17 @@ footer .footer-content p {
     font-family: "Oswald", sans-serif;
 }
 
+.menu {
+    margin-bottom: 50px;
+}
+
 #happy-hour P {
     text-align: center;
     margin-bottom: 8px;
+}
+
+#bar-menu img {
+    margin-bottom: 40px;
 }
 
 /*-------------MUSIC PAGE-------------*/
@@ -521,6 +525,32 @@ footer .footer-content p {
 
     .footer-row {
         justify-content: space-around;
+    }
+
+    /*---------MENU-----------*/
+    .menu-cont h3 {
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
+
+    #bar-menu img {
+        width: 80%;
+        margin-bottom: 50px;
+
+    }
+
+    #dessert-menu {
+        display: flex;
+        justify-content: center;
+    }
+
+    #dessert-menu img {
+        width: 80%;
+    }
+
+    #happy-hour img {
+        width: 50%;
+
     }
 
     /*---------SEABREEZE-------------*/
@@ -658,9 +688,28 @@ footer .footer-content p {
         margin-bottom: 50px;
     }
 
+    .menu-cont h3 {
+        font-size: 3rem;
+        margin-bottom: 50px;
+    }
+
     #menu img {
         padding: 0 20px;
     }
+
+    #bar-menu {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+
+    #bar-menu img {
+        width: 48%;
+
+    }
+
 
     /*----------_SEABREEZE----------------*/
     .hero-sb {
