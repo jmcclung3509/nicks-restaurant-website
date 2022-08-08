@@ -64,6 +64,9 @@ h2 {
     background-color: #E5E5E5;
 }
 
+/*-------------MAIN-------------*/
+
+
 /*-------------HERO---------------*/
 .main {
     margin: 0;
@@ -93,7 +96,7 @@ h2 {
 .hero h1 {
     font-family: 'Oranienbaum', serif;
     font-size: 4rem;
-    color: white;
+    color: transparent;
     margin-bottom: 0;
     width: 60%;
     text-align: center;
@@ -101,9 +104,20 @@ h2 {
     margin-left: auto;
     margin-top: -50px;
     font-weight: bold;
+    animation: fade-in 2s ease-in forwards;
+    animation-delay: 0.5s;
+
+
 }
 
-/*-------------MAIN---------------------*/
+@keyframes fade-in {
+    100% {
+        color: white;
+    }
+}
+
+/*----------------Intro------------*/
+
 .section-1 .row {
     display: flex;
     justify-content: center;
@@ -151,6 +165,7 @@ h2 {
     background-color: #855959;
 }
 
+/*--------------Food Image Gallery-------------*/
 .section-2 {
     margin-top: 40px;
 }
@@ -187,7 +202,7 @@ h2 {
     padding: 0;
 }
 
-
+/*----------------HOURS---------------*/
 
 .section-3 {
     /* background-color: white; */
@@ -423,6 +438,18 @@ footer .footer-content p {
     padding: 20px 0;
 }
 
+.hero-sb {
+    padding: 0;
+}
+
+.hero-sb img {
+    width: 100vw;
+    padding: 0;
+}
+
+.sb-footer {
+    margin-top: 100px;
+}
 
 /*-------------MEDIA QUERIES--------------*/
 
@@ -449,10 +476,14 @@ footer .footer-content p {
         height: 100%;
     }
 
+    .hero {
+        height: 75vh;
+    }
+
     .hero h1 {
         font-size: 6.5rem;
-        width: 90%;
-        margin-top: -150px;
+        width: 60%;
+        /* margin-top: -150px; */
     }
 
     .no-show {
@@ -592,12 +623,15 @@ footer .footer-content p {
     .hero {
         height: 100vh;
         flex-flow: row nowrap;
+        margin-top: -100px;
+
 
     }
 
     .hero h1 {
         font-size: 8rem;
         margin-bottom: 0;
+        width: 60%;
 
 
     }
