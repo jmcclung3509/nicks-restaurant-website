@@ -126,6 +126,30 @@ h2 {
 
 .hero-image {
     border-radius: 15px;
+    border: 2px solid #493838;
+    width: 95%;
+    height: 95%;
+
+}
+
+/* .outer-boarder {
+    border: 15px solid #493838;
+    padding: 15px;
+    width: 99%;
+    height: 99%;
+    border-radius: 5px;
+}
+
+.middle-boarder {
+    border: 5px solid white;
+    width: 97%;
+    height: 99%;
+} */
+
+.inner-boarder {
+    border: 5px solid #493838;
+    padding: 10px 3px;
+    border-radius: 15px;
 
 }
 
