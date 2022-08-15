@@ -126,7 +126,7 @@ h2 {
 
 .hero-image {
     border-radius: 15px;
-    border: 2px solid #493838;
+    border: 5px solid #493838;
     width: 95%;
     height: 95%;
 
@@ -146,12 +146,12 @@ h2 {
     height: 99%;
 } */
 
-.inner-boarder {
+/* .inner-boarder {
     border: 5px solid #493838;
     padding: 10px 3px;
     border-radius: 15px;
 
-}
+} */
 
 .btn-primary {
     background-color: #493838;
