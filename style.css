@@ -144,11 +144,6 @@ h2 {
     border-radius: 15px;
     border: 5px solid #493838;
 
-
-    /* background: white;
-    padding: 40px;
-    border: 2px solid #ab0433; */
-
 }
 
 
@@ -392,10 +387,6 @@ footer .col {
 
 }
 
-/* .footer-content:first-child {
-    padding-left: 12px;
-    padding-right: 0;
-} */
 
 .footer-content i {
     font-size: 1.5rem;
@@ -488,6 +479,20 @@ footer .col {
 /*------------Gallery--------------*/
 .gallery-img-container img {
     width: fit-content;
+    height: fit-content;
+}
+
+.gallery-section {
+    margin-bottom: 100px;
+}
+
+.gallery-section h3 {
+    margin-bottom: 20px;
+
+}
+
+.gallery-heading {
+    margin: 40px 0;
 }
 
 /*-------------MEDIA QUERIES--------------*/
@@ -523,7 +528,7 @@ footer .col {
     }
 
     .text-hero {
-        padding: 40px;
+        padding: 40px 10px;
     }
 
     */ .no-show {
