@@ -87,7 +87,7 @@ h2 {
 }
 
 .hero-text-centered {
-    background-image: url("images/rainbow-rockaway.png");
+    background-image: url("images/sunset-four.png");
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 0 !important;
@@ -360,30 +360,42 @@ footer * {
     color: white;
 }
 
-footer .col h4 {
+.footer-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-top: 40px;
+}
+
+.footer-content h4 {
     margin-bottom: 10px;
-    font-size: 2vh;
+    font-size: 1.5rem;
+
 }
 
 .footer-content {
     padding-left: 0;
+    width: 100%;
+    margin-bottom: 40px;
 }
 
 footer .col {
     text-align: center;
 }
 
-footer .footer-content p {
+.footer-content p,
+.footer-content a {
     font-size: .68rem;
     margin-bottom: 0;
     width: 100%;
 
 }
 
-.footer-content:first-child {
+/* .footer-content:first-child {
     padding-left: 12px;
     padding-right: 0;
-}
+} */
 
 .footer-content i {
     font-size: 1.5rem;
@@ -528,11 +540,7 @@ footer .footer-content p {
     width: 94%;
 }
 
-.hours-container {
-    width: 48%;
-    height: 525px;
-    margin-bottom: 100px;
-}
+
 
 .hours-container p {
     font-size: 1.5rem;
