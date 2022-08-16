@@ -86,7 +86,7 @@ h2 {
 
 }
 
-.hero-text-centered {
+.hero-outer {
     background-image: url("images/sunset-four.png");
     background-size: cover;
     background-repeat: no-repeat;
@@ -97,7 +97,7 @@ h2 {
 }
 
 .text-hero {
-    background-color: rgba(244, 243, 243, 0.4);
+    background-color: rgba(244, 243, 243, 0.6);
     padding: 20px;
 }
 
@@ -516,124 +516,129 @@ footer .col {
     }
 
     .hero-text-centered {
-        height: 50vh;
+        /* height: 50vh; */
         display: flex;
         align-items: center;
 
     }
 
-    /* .hero {
-        height: 75vh;
+    .text-hero {
+        padding: 40px;
     }
 
-    .hero h1 {
-        font-size: 6.5rem;
+    */ .no-show {
+        display: block;
+    }
+
+    .section-3 {
+        width: 94%;
+    }
+
+
+
+    .hours-container p {
+        font-size: 1.5rem;
+
+    }
+
+    .hours-container span {
+        font-size: 1.5rem;
+    }
+
+    .hours-container h3 {
+        font-size: 1.8rem;
+
+        margin-top: 30px;
+    }
+
+    .hours-inner-container {
+        justify-content: space-between;
+    }
+
+    .hours a {
+        font-size: 1.5rem;
+    }
+
+    .closed {
+        font-size: 1.5rem;
+    }
+
+    .section-4 {
         width: 60%;
-        /* margin-top: -150px; */
-}
 
-*/ .no-show {
-    display: block;
-}
+    }
 
-.section-3 {
-    width: 94%;
-}
+    .carousel-item img {
+        width: 100%;
+        max-height: 450px;
+    }
 
+    .carousel-item .car-img {
+        width: 150%;
+    }
 
+    /*----------FOOTER---------------*/
+    .footer-content {
+        flex: 1;
 
-.hours-container p {
-    font-size: 1.5rem;
+    }
 
-}
+    .footer-content h4 {
+        font-size: 1.5rem;
 
-.hours-container span {
-    font-size: 1.5rem;
-}
+    }
 
-.hours-container h3 {
-    font-size: 1.8rem;
+    footer .footer-content p {
+        font-size: 1rem;
+    }
 
-    margin-top: 30px;
-}
+    .footer-content a {
+        font-size: 1rem;
+    }
 
-.hours-inner-container {
-    justify-content: space-between;
-}
+    .footer-content label {
+        font-size: 1rem;
+    }
 
-.hours a {
-    font-size: 1.5rem;
-}
+    .footer-content i {
+        font-size: 2rem;
+    }
 
-.closed {
-    font-size: 1.5rem;
-}
+    .footer-row {
+        justify-content: space-around;
+        align-items: flex-start;
+    }
 
-.section-4 {
-    width: 60%;
+    /*---------MENU-----------*/
+    .menu-cont h3 {
+        font-size: 2.5rem;
+        margin-bottom: 50px;
+    }
 
-}
+    #bar-menu img {
+        width: 80%;
+        margin-bottom: 50px;
 
-.carousel-item img {
-    width: 100%;
-    max-height: 450px;
-}
+    }
 
-.carousel-item .car-img {
-    width: 150%;
-}
+    #dessert-menu {
+        display: flex;
+        justify-content: center;
+    }
 
-/*----------FOOTER---------------*/
-footer .footer-content p {
-    font-size: 1rem;
-}
+    #dessert-menu img {
+        width: 80%;
+    }
 
-.footer-content a {
-    font-size: 1rem;
-}
+    #happy-hour img {
+        width: 50%;
 
-.footer-content label {
-    font-size: 1rem;
-}
+    }
 
-.footer-content i {
-    font-size: 2rem;
-}
-
-.footer-row {
-    justify-content: space-around;
-}
-
-/*---------MENU-----------*/
-.menu-cont h3 {
-    font-size: 2.5rem;
-    margin-bottom: 50px;
-}
-
-#bar-menu img {
-    width: 80%;
-    margin-bottom: 50px;
-
-}
-
-#dessert-menu {
-    display: flex;
-    justify-content: center;
-}
-
-#dessert-menu img {
-    width: 80%;
-}
-
-#happy-hour img {
-    width: 50%;
-
-}
-
-/*---------SEABREEZE-------------*/
-.sb-content {
-    justify-content: center;
-}
+    /*---------SEABREEZE-------------*/
+    .sb-content {
+        justify-content: center;
+    }
 
 
 }
@@ -678,6 +683,10 @@ footer .footer-content p {
         display: flex;
         align-items: center;
 
+    }
+
+    .text-hero {
+        padding: 40px;
     }
 
 
