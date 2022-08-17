@@ -7,6 +7,7 @@
 body {
     /* background-color: #E5E5E5; */
     background-color: white;
+    margin: auto;
 }
 
 h2 {
@@ -91,6 +92,7 @@ h2 {
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 0 !important;
+    margin: auto;
 
 
 
@@ -99,6 +101,7 @@ h2 {
 .text-hero {
     background-color: rgba(244, 243, 243, 0.6);
     padding: 20px;
+    margin: auto;
 }
 
 
@@ -531,15 +534,17 @@ footer .col {
         padding: 40px 10px;
     }
 
-    */ .no-show {
+    .no-show {
         display: block;
     }
 
     .section-3 {
-        width: 94%;
+        width: 100%;
     }
 
-
+    .hours-container {
+        width: 48%;
+    }
 
     .hours-container p {
         font-size: 1.5rem;
@@ -715,15 +720,12 @@ footer .col {
     }
 
     .section-3 {
-        width: 60%;
+
         margin-bottom: 100px;
 
     }
 
-    .section-3 h2 {
-        width: 60%;
 
-    }
 
 
     .closed {
@@ -809,6 +811,10 @@ footer .col {
 }
 
 @media screen and (min-width: 1600px) {
+    body {
+        max-width: 1580px
+    }
+
     .hero h1 {
         font-size: 8rem;
 
