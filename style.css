@@ -181,8 +181,8 @@ h2 {
 h2 {
     font-size: 2.5rem;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin: 50px;
+    /* margin-bottom: 20px; */
 
 }
 
@@ -473,11 +473,15 @@ footer .col {
 
 .hero-sb {
     padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-sb img {
-    width: 100vw;
     padding: 0;
+    width: 80%;
+    margin: auto;
 }
 
 .sb-footer {
