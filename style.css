@@ -88,7 +88,7 @@ h2 {
 }
 
 .hero-outer {
-    background-image: url("images/sunset-four.png");
+    background-image: url("images/sunset_2.png");
     background-size: cover;
     background-repeat: no-repeat;
     margin-top: 0 !important;
@@ -485,9 +485,14 @@ footer .col {
 }
 
 /*------------Gallery--------------*/
+.gallery-img-container {
+    margin-bottom: 20px;
+
+}
+
 .gallery-img-container img {
     width: fit-content;
-    height: fit-content;
+    max-height: 220px;
 }
 
 .gallery-section {
