@@ -159,7 +159,7 @@ h2 {
     background-color: #855959;
 }
 
-.hero-text>* {
+.hero-text > * {
     text-align: center;
 }
 
@@ -308,7 +308,7 @@ h2 {
     justify-content: flex-start;
 }
 
-.hours-right>* {
+.hours-right > * {
     justify-content: flex-end;
     text-align: right;
 }
@@ -434,6 +434,11 @@ footer .col {
 
 #bar-menu img {
     margin-bottom: 40px;
+}
+
+#bar-menu img {
+    max-width: 400px;
+
 }
 
 /*-------------MUSIC PAGE-------------*/
@@ -625,8 +630,17 @@ footer .col {
         margin-bottom: 50px;
     }
 
+    #bar-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: auto;
+    }
+
     #bar-menu img {
-        width: 80%;
+        width: 100%;
         margin-bottom: 50px;
 
     }
