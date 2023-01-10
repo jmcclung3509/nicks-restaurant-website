@@ -5,9 +5,10 @@
 }
 
 body {
-    /* background-color: #E5E5E5; */
-    background-color: white;
+    background: linear-gradient(45deg, rgb(250,250,210, 0.1), 
+    rgb(250,250,210, 0.3));
     margin: auto;
+    width: 100vw;
 }
 
 h2 {
@@ -15,6 +16,20 @@ h2 {
 
 }
 
+section{
+    margin: 0 100px 400px;
+}
+.animate{
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s, transform 1s;
+
+}
+.isAnimated{
+    opacity: 1;
+    transform: translateY(0);
+
+}
 /*--------------NAVBAR-------------------*/
 
 .no-show {
@@ -29,20 +44,22 @@ h2 {
 .navbar {
     padding: 0;
     height: 70px;
-    background-color: #e5e5e5 !important;
+    width: 60%;
+    margin: auto;
+    background: transparent;
+    margin-bottom: 100px;
 
 }
 
 .nav-container {
     padding: 10px;
     border-bottom: 2px solid #493838;
-    background-color: white
+
 }
 
 .navbar-expand-lg .navbar-collapse {
     justify-content: flex-end;
     padding-left: 20px;
-    background-color: white;
 
 }
 
@@ -63,11 +80,10 @@ h2 {
 }
 
 .nav-link:hover {
-    background-color: #E5E5E5;
+
 }
 
 .dropdown-item:hover {
-    background-color: #E5E5E5;
 }
 
 /*-------------MAIN-------------*/
@@ -87,21 +103,31 @@ h2 {
 
 }
 
-.hero-outer {
-    background-image: url("images/sunset-long2.png");
+main.homepage {
+ 
+}
+.overlay{
+    background: linear-gradient(45deg, rgb(250,250,210, 0.1), 
+    rgb(250,250,210, 0.3));
+    
+}
+.hero-outer{
+    background-image: url("images/sunset-long2.png"); 
     background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 0 !important;
     margin: auto;
-
-
+    width: 80%;
+    height: 50vh;
 
 }
-
 .text-hero {
-    background-color: rgba(244, 243, 243, 0.6);
-    padding: 20px;
+    background-color: rgba(244, 243, 243, 0.4);
+    display: flex;
+    flex-flow: column wrap;
+    width: 60%;
+    height: 100%;
     margin: auto;
+    justify-content: center
 }
 
 
@@ -121,7 +147,6 @@ h2 {
 .hero h1 {
     font-family: 'Oranienbaum', serif;
     font-size: 4rem;
-    color: transparent;
     margin-bottom: 0;
     width: 60%;
     text-align: center;
@@ -129,7 +154,7 @@ h2 {
     margin-left: auto;
     margin-top: -50px;
     font-weight: bold;
-    animation: fade-in 2s ease-in forwards;
+    animation: fade-in 2s ease-in forwards∏
     animation-delay: 0.5s;
 
 
@@ -222,7 +247,6 @@ h2 {
 /*----------------HOURS---------------*/
 
 .section-3 {
-    background-color: white;
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -230,10 +254,11 @@ h2 {
     flex-flow: row wrap;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
-    padding-bottom: 100px;
-    /* margin-top: 100px; */
     gap: 20px;
+}
+.section-3 .container{
+    width: 60%;
+    margin: auto;
 }
 
 .section-3 h2 {
@@ -254,34 +279,37 @@ h2 {
 .right {
     display: flex;
     justify-content: flex-end;
-    ;
+
 }
 
 .hours-container {
-    width: 100%;
+
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+
 }
 
 .hours-title {
     font-weight: 700;
     font-size: 1.5rem;
     padding: 10px;
-    background-color: white;
     height: fit-content;
     width: 100%;
+    margin-bottom: 20px;
 
 }
 
 .hours-title-left {
     align-items: left;
     border-bottom: 1px solid #493838;
+    padding-left: 0;
 }
 
 .hours-title-right {
     align-items: right;
     border-bottom: 1px solid #493838;
+    padding-right: 0;
 }
 
 .hours-title .music-title {
@@ -293,7 +321,7 @@ h2 {
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
-    margin: 0 15px;
+    margin: 0;
 }
 
 .hours p {
@@ -306,11 +334,13 @@ h2 {
 
 .hours-left {
     justify-content: flex-start;
+    padding-left: 0;
 }
 
 .hours-right > * {
     justify-content: flex-end;
     text-align: right;
+    padding-right: 0;
 }
 
 
@@ -348,8 +378,7 @@ h2 {
 footer {
     background-color: #493838;
     padding: 20px 10px;
-    margin-left: auto;
-    margin-right: auto;
+margin: unset;
 
 }
 
@@ -516,6 +545,10 @@ footer .col {
 
 
 @media screen and (min-width: 768px) {
+    section{
+        margin-left: 200px;
+        margin-right: 200px;
+    }
     p {
         font-size: 1.2rem;
     }
@@ -677,7 +710,10 @@ footer .col {
 }
 
 @media screen and (min-width: 1200px) {
-
+section{
+    margin-left: 300px;
+    margin-right: 300px;
+}
     /*------------NAV-------------------*/
     nav .nav-link {
         font-size: 1.2rem;
@@ -742,11 +778,7 @@ footer .col {
         text-align: center;
     }
 
-    .section-3 {
-
-        margin-bottom: 100px;
-
-    }
+ 
 
 
 
@@ -755,10 +787,7 @@ footer .col {
         font-size: 1.8rem;
     }
 
-    .section-4 {
-        width: 40%;
-        margin-bottom: 100px;
-    }
+ 
 
     .carousel-item img {
         width: 100%;
@@ -834,7 +863,8 @@ footer .col {
 }
 
 @media screen and (min-width: 1600px) {
-    body {
+   
+    .seabreeze{
         max-width: 1580px
     }
 
