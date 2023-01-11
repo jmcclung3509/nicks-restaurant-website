@@ -15,11 +15,10 @@ h2 {
 }
 
 section{
-    margin: 0 100px 100px;
+    margin:  0 50px 100px;
+    padding-top: 50px;
 }
-.main-hero{
-    margin: 0 50px 100px;
-}
+
 .section-about{
     margin-bottom: 0;
     padding-bottom: 0;
@@ -554,8 +553,8 @@ footer .col {
 
 @media screen and (min-width: 768px) {
     section{
-        margin-left: 200px;
-        margin-right: 200px;
+        margin: 0 200px 200px;
+        padding-top: 50px;
     }
     p {
         font-size: 1.2rem;
@@ -579,10 +578,7 @@ footer .col {
         width: 100%;
         height: 100%;
     }
-    .hero-outer{
-        width: 80%;
-        margin: auto;
-    }
+
 
     .hero-text-centered {
         /* height: 50vh; */
@@ -726,8 +722,9 @@ footer .col {
 
 @media screen and (min-width: 1200px) {
 section{
-    margin-left: 300px;
-    margin-right: 300px;
+    margin: 0 300px 300px;
+    padding-top: 50px;
+
 }
     /*------------NAV-------------------*/
     nav .nav-link {
@@ -755,9 +752,7 @@ section{
         font-size: 1rem;
     }
 
-.hero-outer{
-    width: 60%;
-}
+
 
     .hero-text-centered {
         height: 50vh;

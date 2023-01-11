@@ -3,7 +3,7 @@
 const useAnimateIntoView = ()=>{
     const animatedElements = document.querySelectorAll(".animate")
     const options = {
-        threshold: 0.2,
+        threshold: 0.1,
     }
 
     let observer = new IntersectionObserver((entries)=>{
