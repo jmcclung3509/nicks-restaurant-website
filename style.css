@@ -3,12 +3,10 @@
     font-family: 'Playfair Display', serif;
     color: rgb(39, 38, 38);
 }
-
-body {
-    background: linear-gradient(45deg, rgb(250,250,210, 0.1), 
-    rgb(250,250,210, 0.3));
-    margin: auto;
-    width: 100vw;
+body{
+    background-image: linear-gradient(99.6deg, rgb(112, 128, 152, .3) 10.6%, rgb(242, 227, 234, .3) 32.9%, rgb(234, 202, 213, .3) 52.7%, rgb(220, 227, 239, .3) 72.8%, rgb(185, 205, 227, .3) 81.1%, rgb(154, 180, 212, .3) 100%), url(/images/christina-deravedisian-wjIsoObVPRM-unsplash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 h2 {
@@ -17,7 +15,14 @@ h2 {
 }
 
 section{
-    margin: 0 100px 400px;
+    margin: 0 100px 100px;
+}
+.main-hero{
+    margin: 0 50px 100px;
+}
+.section-about{
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .animate{
     opacity: 0;
@@ -44,16 +49,18 @@ section{
 .navbar {
     padding: 0;
     height: 70px;
-    width: 60%;
+    width: 100%;
     margin: auto;
-    background: transparent;
-    margin-bottom: 100px;
+    background:linear-gradient(to right, rgba(255,255,255, 0.03),rgba(255,255,255, 0.5),rgba(255,255,255, 0.8), rgba(255,255,255, .9), rgba(255,255,255, 0.5),rgba(255,255,255, 0.8),rgba(255,255,255, 0.03));
+   
+
 
 }
 
 .nav-container {
     padding: 10px;
     border-bottom: 2px solid #493838;
+   
 
 }
 
@@ -88,46 +95,43 @@ section{
 
 /*-------------MAIN-------------*/
 
-
-/*-------------HERO---------------*/
-.main {
+main {
     margin: 0;
+
 }
+/*-------------HERO---------------*/
 
 
 
 .hero-container {
     padding: 0;
     animation: fade-in 2s ease-in forwards;
+    
     /* background-color: #F2E6D8; */
 
 }
 
-main.homepage {
- 
-}
-.overlay{
-    background: linear-gradient(45deg, rgb(250,250,210, 0.1), 
-    rgb(250,250,210, 0.3));
-    
-}
 .hero-outer{
-    background-image: url("images/sunset-long2.png"); 
+
     background-size: cover;
     background-repeat: no-repeat;
     margin: auto;
-    width: 80%;
-    height: 50vh;
+    width: 100%;
+    padding-top: 100px;
+
 
 }
 .text-hero {
     background-color: rgba(244, 243, 243, 0.4);
     display: flex;
     flex-flow: column wrap;
-    width: 60%;
+    width: 100%;
     height: 100%;
     margin: auto;
-    justify-content: center
+    justify-content: center;
+    padding: 40px;
+    border: 10px solid;
+    
 }
 
 
@@ -154,7 +158,7 @@ main.homepage {
     margin-left: auto;
     margin-top: -50px;
     font-weight: bold;
-    animation: fade-in 2s ease-in forwards∏
+    animation: fade-in 2s ease-in forwards;
     animation-delay: 0.5s;
 
 
@@ -378,8 +382,7 @@ h2 {
 footer {
     background-color: #493838;
     padding: 20px 10px;
-margin: unset;
-
+    margin-top: -25px;
 }
 
 footer * {
@@ -490,6 +493,11 @@ footer .col {
 #history figure {
     margin: 40px 0;
 }
+#history figure:last-child{
+    width: 60%;
+    margin: 40px auto 0;
+    padding-bottom: 100px;
+}
 
 /*---------------SeaBreeze Motel-----------------*/
 .section-sb-3 {
@@ -563,11 +571,17 @@ footer .col {
 
     .navbar {
         height: 100px;
+        width: 80%;
+        margin: auto;
     }
 
     .navbar-brand img {
         width: 100%;
         height: 100%;
+    }
+    .hero-outer{
+        width: 80%;
+        margin: auto;
     }
 
     .hero-text-centered {
@@ -578,7 +592,8 @@ footer .col {
     }
 
     .text-hero {
-        padding: 40px 10px;
+        padding: 100px 50px;
+        border: 20px solid;
     }
 
     .no-show {
@@ -740,12 +755,9 @@ section{
         font-size: 1rem;
     }
 
-    .hero {
-        height: 100vh;
-        flex-flow: row nowrap;
-        margin-top: -100px;
-
-    }
+.hero-outer{
+    width: 60%;
+}
 
     .hero-text-centered {
         height: 50vh;
@@ -755,7 +767,7 @@ section{
     }
 
     .text-hero {
-        padding: 40px;
+        padding: 120px 60px;
     }
 
 
@@ -823,9 +835,6 @@ section{
 
     /*------------ABOUT-------------*/
 
-    #history .content-wrapper {
-        padding: 0 50px;
-    }
 
     /*------------MENU -------------*/
     #menu h2 {

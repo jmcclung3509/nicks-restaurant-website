@@ -1,10 +1,10 @@
-const animatedElements = document.querySelectorAll(".animate")
 
-const options = {
-    threshold: 0.3,
-}
 
 const useAnimateIntoView = ()=>{
+    const animatedElements = document.querySelectorAll(".animate")
+    const options = {
+        threshold: 0.2,
+    }
 
     let observer = new IntersectionObserver((entries)=>{
         entries.forEach((entry)=>{
@@ -17,14 +17,24 @@ const useAnimateIntoView = ()=>{
     }, options)
     animatedElements.forEach((el)=> observer.observe(el))
 }
-// onMounted(()=>{
-//     setTimeout(()=>{
-//         useAnimateIntoView()
-//     }, 100)
-// })
-// onUpdated(()=>{
-//     setTimeout(()=>{
-//         useAnimateIntoView()
-//     }, 100)
-// })
-useAnimateIntoView()
+
+// const useScroll=()=>{
+//     let scrollPosition = 0;
+//     let lastScrollPosition = 0;
+//     let scrollDirectionUp =  false;
+
+//    const handleScroll=()=>{
+//         scrollPosition = window.pageOffSet;
+//         scrollDirectionUp = lastScrollPosition > scrollPosition;
+//         lastScrollPosition =scrollPosition
+//     }
+//     window.addEventListener("scroll", handleScroll)
+//     return {scrollPosition, scrollDirectionUp}
+// }
+
+window.addEventListener("load", ()=> {
+    setTimeout(()=>{
+        useAnimateIntoView()
+
+    }, 100)
+})
