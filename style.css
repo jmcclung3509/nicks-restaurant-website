@@ -4,7 +4,7 @@
     color: rgb(39, 38, 38);
 }
 body{
-    background-image: linear-gradient(99.6deg, rgb(112, 128, 152, .3) 10.6%, rgb(242, 227, 234, .3) 32.9%, rgb(234, 202, 213, .3) 52.7%, rgb(220, 227, 239, .3) 72.8%, rgb(185, 205, 227, .3) 81.1%, rgb(154, 180, 212, .3) 100%), url(/images/christina-deravedisian-wjIsoObVPRM-unsplash.png);
+    background-image: linear-gradient(99.6deg, rgb(112, 128, 152, .3) 10.6%, rgb(242, 227, 234, .3) 32.9%, rgb(234, 202, 213, .3) 52.7%, rgb(220, 227, 239, .3) 72.8%, rgb(185, 205, 227, .3) 81.1%, rgb(154, 180, 212, .3) 100%);
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -109,19 +109,14 @@ main {
     /* background-color: #F2E6D8; */
 
 }
-
-.hero-outer{
-
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin: auto;
-    width: 100%;
-    padding-top: 100px;
-
-
+.main-hero{
+    display: flex;
+    justify-content: center;
 }
+
+
 .text-hero {
-    background-color: rgba(244, 243, 243, 0.4);
+    /* background-color: rgba(244, 243, 243, 0.4); */
     display: flex;
     flex-flow: column wrap;
     width: 100%;
@@ -129,7 +124,7 @@ main {
     margin: auto;
     justify-content: center;
     padding: 40px;
-    border: 10px solid;
+
     
 }
 
@@ -163,19 +158,47 @@ main {
 
 }
 
-.text-center {
-    margin-bottom: 50px;
-}
+
 
 .img-container {
     margin: auto;
 }
 
-.hero-image {
-    border-radius: 15px;
-    border: 5px solid #493838;
 
+.main-hero .outer-container{
+    display: flex;
+    background-image: linear-gradient(rgba(191, 191, 191, 0.3), rgba(191, 191,191, 0.6), rgba(191, 191, 191, 0.3)), url(/images/saira-C5Uk-pdNXWg-unsplash.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+    position: relative;
+    height: 80vh;
 }
+
+.main-hero .outer-container:after{
+    content: "";
+    background: linear-gradient(99.6deg, rgb(112, 128, 152, .5) 10.6%, rgb(242, 227, 234, .5) 32.9%, rgb(234, 202, 213, .5) 52.7%, rgb(220, 227, 239, .5) 72.8%, rgb(185, 205, 227, .5) 81.1%, rgb(154, 180, 212, .5) 100%);
+width: 100%;
+    height:100%;
+    position: absolute;
+    left: -10px;
+    bottom: -10px;
+    z-index: -10;
+    border-radius: 12px;
+}
+.main-hero .outer-container::before{
+    content: "";
+    background: linear-gradient(99.6deg, rgb(112, 128, 152, .5) 10.6%, rgb(242, 227, 234, .5) 32.9%, rgb(234, 202, 213, .5) 52.7%, rgb(220, 227, 239, .5) 72.8%, rgb(185, 205, 227, .5) 81.1%, rgb(154, 180, 212, .5) 100%);
+width: 100%;
+    height:100%;
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+    z-index: -10;
+    border-radius: 12px;
+}
+
+
 
 
 .btn-primary {
@@ -271,7 +294,12 @@ h2 {
     font-size: 4vh;
     text-align: left;
 }
-
+.inner-container-hours{
+    width: 100%;
+}
+.section-3 .image-container img{
+    width: 100%;
+}
 .hours-inner-container {
     display: flex;
     justify-content: center;
@@ -286,7 +314,7 @@ h2 {
 }
 
 .hours-container {
-
+margin-bottom: 100px;
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -304,13 +332,13 @@ h2 {
 }
 
 .hours-title-left {
-    align-items: left;
+  text-align: left;
     border-bottom: 1px solid #493838;
     padding-left: 0;
 }
 
 .hours-title-right {
-    align-items: right;
+  text-align: right;
     border-bottom: 1px solid #493838;
     padding-right: 0;
 }
@@ -586,10 +614,14 @@ footer .col {
         align-items: center;
 
     }
+    .inner-container{
+        padding: 40px;
+    }
+
 
     .text-hero {
         padding: 100px 50px;
-        border: 20px solid;
+
     }
 
     .no-show {
@@ -601,9 +633,11 @@ footer .col {
     }
 
     .hours-container {
-        width: 48%;
+        width: 100%;
     }
-
+.hours, .inner-container-hours {
+    width: 48%;
+}
     .hours-container p {
         font-size: 1.5rem;
 
@@ -722,7 +756,7 @@ footer .col {
 
 @media screen and (min-width: 1200px) {
 section{
-    margin: 0 300px 300px;
+    margin: 0 200px 300px;
     padding-top: 50px;
 
 }
@@ -762,6 +796,7 @@ section{
     }
 
     .text-hero {
+        width: 80%;
         padding: 120px 60px;
     }
 
@@ -786,7 +821,9 @@ section{
     }
 
  
-
+.section-3.image-container{
+    widht: 50%;
+}
 
 
 
